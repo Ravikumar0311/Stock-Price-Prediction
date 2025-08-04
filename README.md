@@ -15,7 +15,7 @@ The application uses the **LSTM (Long Short-Term Memory)** neural network to pre
 | Technology        | Description                                  |
 |-------------------|----------------------------------------------|
 | Python            | Core programming language                    |
-| TensorFlow/Keras  | For building and loading the LSTM model      |
+| Keras             | For building and loading the LSTM model      |
 | Streamlit         | For building the web interface               |
 | yfinance          | To download stock market data                |
 | scikit-learn      | For scaling and preprocessing data           |
@@ -26,6 +26,7 @@ The application uses the **LSTM (Long Short-Term Memory)** neural network to pre
 
 ## Project Structure
 stock-price-prediction/
+
 ├── app.py # Streamlit web app
 
 ├── Stock Price Prediction.ipynb # Notebook to train/test model
@@ -53,7 +54,7 @@ stock-price-prediction/
 
 ## How it Works
 
-1. **User Input**: Enter a stock ticker symbol (e.g., TSLA).
+1. **User Input**: Enter a stock ticker symbol (e.g., GOOG).
 2. **Data Fetching**: Stock data is fetched from Yahoo Finance from `2014-01-01` to `2025-03-31`.
 3. **Data Preprocessing**:
    - Split into train and test (80%-20%)
@@ -65,19 +66,17 @@ stock-price-prediction/
 ---
 
 ## Screenshots
-
-![MA Visualization](https://via.placeholder.com/700x400?text=Moving+Average+Graphs)
-![Prediction](https://via.placeholder.com/700x400?text=Predicted+vs+Actual+Graph)
-
-> *(Replace with actual screenshots if available)*
+### Moving average  
+![Moving Average Visualization](https://github.com/Ravikumar0311/Stock-Price-Prediction/blob/main/visuals/moving%20average.png)
+### Predicted VS actual price
+![Prediction](https://github.com/Ravikumar0311/Stock-Price-Prediction/blob/main/visuals/actual%20vs%20predicted%20price.png)
 
 ---
 
-## Getting Started
+## Limitations
+- Predictive accuracy depends on training data and market volatility.
+- Only works with stocks supported by Yahoo Finance.
+- No advanced technical indicators (e.g., RSI, MACD) used yet.
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/stock-price-prediction.git
-cd stock-price-prediction
-
+## License
+This project is licensed under the MIT License.
